@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 
+import sys
 import csv
 import time
 import codecs
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-process_file_name = '2019'
+csv.field_size_limit(sys.maxsize)
+
+process_file_name = '20220615'
 chat_time_list = []
 with codecs.open("data/{}.csv".format(process_file_name), 'r', encoding='utf-8') as f:
     csv_file = csv.reader(f)

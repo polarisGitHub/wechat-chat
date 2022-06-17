@@ -3,11 +3,11 @@
 import codecs
 from wordcloud import WordCloud
 
-file_name = '2019_chat'
+file_name = '20220615_chat'
 with codecs.open("data/{}.txt".format(file_name), 'r', encoding='utf-8') as f:
     text = f.read()
 
-wordcloud = WordCloud(background_color="white", width=2000, height=1720, margin=2, max_words=300, font_step=2,
+wordcloud = WordCloud(background_color="white", width=3840, height=2160, margin=3, max_words=300, font_step=3,
                       font_path="/System/Library/fonts/PingFang.ttc"
                       ).generate(text)
 
